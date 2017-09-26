@@ -1,0 +1,27 @@
+uuid: 972d2f7b-baf9-45cd-8ceb-8dc9c164a528
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - options
+id: commerce_product.field_coating_type
+field_name: field_coating_type
+entity_type: commerce_product
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Surface Coating'
+      label: 'Surface Coating'
+    -
+      value: 'Protected Coating'
+      label: 'Protected Coating'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
