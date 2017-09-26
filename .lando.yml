@@ -1,0 +1,22 @@
+name: omegafilters
+recipe: pantheon
+config:
+  framework: drupal8
+  env: dev
+  site: omegafilters
+  id: 7109D5EE-790B-4033-88B3-E6738B947542
+services:
+  appserver:
+    build:
+      - cd $LANDO_MOUNT && composer install
+      - gunzip < $LANDO_MOUNT/build/bootstrap.sql.gz | mysql -hdatabase -upantheon -ppantheon pantheon
+      - cd $LANDO_MOUNT/web && drush cr && drush updatedb -y && drush config-import -y && drush updatedb -y && drush cr
+    overrides:
+      services:
+        environment:
+          BEHAT_PARAMS: '{"extensions" : {"Behat\\MinkExtension" : {"base_url" : "http://omegafilters.lndo.site:8000/"}, "Drupal\\DrupalExtension" : {"drush" :   {  "root":  "/app/web" }}}}'
+tooling:
+  behat:
+    service: appserver
+    cmd:
+      - "/app/vendor/bin/behat"
