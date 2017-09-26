@@ -1,0 +1,60 @@
+uuid: 7d68232e-a351-4a35-96ac-c7a0351ad5dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - options
+id: commerce_product.field_filter_type
+field_name: field_filter_type
+entity_type: commerce_product
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Bandpass
+      label: Bandpass
+    -
+      value: 'Beam Splitter'
+      label: 'Beam Splitter'
+    -
+      value: Dichroic
+      label: Dichroic
+    -
+      value: 'Dual Band'
+      label: 'Dual Band'
+    -
+      value: Glass
+      label: Glass
+    -
+      value: Longpass
+      label: Longpass
+    -
+      value: Mirror
+      label: Mirror
+    -
+      value: 'Neutral Density'
+      label: 'Neutral Density'
+    -
+      value: Notch
+      label: Notch
+    -
+      value: Other
+      label: Other
+    -
+      value: 'Quad Band'
+      label: 'Quad Band'
+    -
+      value: Shortpass
+      label: Shortpass
+    -
+      value: 'Triple Band'
+      label: 'Triple Band'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

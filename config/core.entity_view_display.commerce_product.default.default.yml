@@ -5,10 +5,14 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.default
     - field.field.commerce_product.default.body
+    - field.field.commerce_product.default.field_center_wavelength
+    - field.field.commerce_product.default.field_coating_type
+    - field.field.commerce_product.default.field_filter_type
     - field.field.commerce_product.default.stores
     - field.field.commerce_product.default.variations
   module:
     - commerce_product
+    - options
     - text
 _core:
   default_config_hash: gT03TFcuSod4d9uPQNs_gqK1F1QZ0Ray5CBYW0BNLnk
@@ -24,14 +28,37 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_center_wavelength:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_coating_type:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_filter_type:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
   variations:
     type: commerce_add_to_cart
     weight: 1
     label: hidden
     settings:
-      default_quantity: '1'
       combine: true
-      show_quantity: false
     third_party_settings: {  }
     region: content
 hidden:
