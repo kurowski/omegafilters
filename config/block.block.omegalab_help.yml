@@ -1,0 +1,22 @@
+uuid: 1aee1d7e-d4a3-40e4-a4c8-db6673cb58a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - omegalab
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: omegalab_help
+theme: omegalab
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

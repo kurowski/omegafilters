@@ -1,0 +1,22 @@
+uuid: ea1ad9e2-c884-492e-8c86-26c684b5dc7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - omegalab
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: omegalab_messages
+theme: omegalab
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

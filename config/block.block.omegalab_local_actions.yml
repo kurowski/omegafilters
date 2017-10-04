@@ -1,0 +1,20 @@
+uuid: 7c4b46b4-474c-4ee4-8045-977c7a48a7c6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - omegalab
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: omegalab_local_actions
+theme: omegalab
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
