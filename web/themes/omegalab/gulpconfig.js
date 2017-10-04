@@ -194,8 +194,8 @@ module.exports = {
     rewriteRules: [],
   },
   drupal: {
-    enabled: false,
-    themeFile: 'patternlab.info.yml',
+    enabled: true,
+    themeFile: 'omegalab.info.yml',
     // when these files change
     watch: [
       'templates/**',

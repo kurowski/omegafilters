@@ -1,10 +1,10 @@
-name: Pattern Lab Starter
+name: Omega Lab
 type: theme
-description: A theme with Pattern Lab
+description: A theme for Omega Optical
 base theme: stable
 core: 8.x
 libraries:
-  - patternlab/core
+  - omegalab/core
 regions:
   header: Header
   content: Content
