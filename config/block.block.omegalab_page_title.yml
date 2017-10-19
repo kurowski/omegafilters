@@ -1,0 +1,20 @@
+uuid: 6c1eaaae-c954-434d-b2b8-d78cb1cd2e0b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - omegalab
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: omegalab_page_title
+theme: omegalab
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
