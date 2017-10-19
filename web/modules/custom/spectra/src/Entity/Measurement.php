@@ -37,7 +37,7 @@ use Drupal\user\UserInterface;
  *   admin_permission = "administer measurement entities",
  *   entity_keys = {
  *     "id" = "id",
- *     "label" = "name",
+ *     "label" = "wavelength",
  *     "uuid" = "uuid",
  *     "uid" = "user_id",
  *     "langcode" = "langcode",
