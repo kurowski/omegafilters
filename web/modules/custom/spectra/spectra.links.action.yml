@@ -1,0 +1,10 @@
+entity.measurement.add_form:
+  route_name: entity.measurement.add_form
+  title: 'Add Measurement'
+  appears_on:
+    - entity.measurement.collection
+entity.scan.add_form:
+  route_name: entity.scan.add_form
+  title: 'Add Scan'
+  appears_on:
+    - entity.scan.collection

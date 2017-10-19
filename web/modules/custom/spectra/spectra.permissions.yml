@@ -1,0 +1,42 @@
+add measurement entities:
+  title: 'Create new Measurement entities'
+
+administer measurement entities:
+  title: 'Administer Measurement entities'
+  description: 'Allow to access the administration form to configure Measurement entities.'
+  restrict access: true
+
+delete measurement entities:
+  title: 'Delete Measurement entities'
+
+edit measurement entities:
+  title: 'Edit Measurement entities'
+
+access measurement overview:
+  title: 'Access the Measurement overview page'
+
+view measurement entities:
+  title: 'View Measurement entities'
+
+add scan entities:
+  title: 'Create new Scan entities'
+
+administer scan entities:
+  title: 'Administer Scan entities'
+  description: 'Allow to access the administration form to configure Scan entities.'
+  restrict access: true
+
+delete scan entities:
+  title: 'Delete Scan entities'
+
+edit scan entities:
+  title: 'Edit Scan entities'
+
+access scan overview:
+  title: 'Access the Scan overview page'
+
+view published scan entities:
+  title: 'View published Scan entities'
+
+view unpublished scan entities:
+  title: 'View unpublished Scan entities'

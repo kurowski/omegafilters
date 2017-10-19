@@ -1,0 +1,44 @@
+# Measurement routing definition
+measurement.settings_tab:
+  route_name: measurement.settings
+  title: 'Settings'
+  base_route: measurement.settings
+
+entity.measurement.canonical:
+  route_name: entity.measurement.canonical
+  base_route: entity.measurement.canonical
+  title: 'View'
+
+entity.measurement.edit_form:
+  route_name: entity.measurement.edit_form
+  base_route: entity.measurement.canonical
+  title: 'Edit'
+
+entity.measurement.delete_form:
+  route_name:  entity.measurement.delete_form
+  base_route:  entity.measurement.canonical
+  title: Delete
+  weight: 10
+
+# Scan routing definition
+scan.settings_tab:
+  route_name: scan.settings
+  title: 'Settings'
+  base_route: scan.settings
+
+entity.scan.canonical:
+  route_name: entity.scan.canonical
+  base_route: entity.scan.canonical
+  title: 'View'
+
+entity.scan.edit_form:
+  route_name: entity.scan.edit_form
+  base_route: entity.scan.canonical
+  title: 'Edit'
+
+entity.scan.delete_form:
+  route_name:  entity.scan.delete_form
+  base_route:  entity.scan.canonical
+  title: Delete
+  weight: 10
+

@@ -1,0 +1,22 @@
+{#
+/**
+ * @file measurement.html.twig
+ * Default theme implementation to present Measurement data.
+ *
+ * This template is used when viewing Measurement pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_measurement()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('measurement') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

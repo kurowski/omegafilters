@@ -1,0 +1,28 @@
+
+# Measurement menu items definition
+entity.measurement.collection:
+  title: 'Measurement list'
+  route_name: entity.measurement.collection
+  description: 'List Measurement entities'
+  parent: system.admin_structure
+  weight: 100
+
+measurement.admin.structure.settings:
+  title: Measurement settings
+  description: 'Configure Measurement entities'
+  route_name: measurement.settings
+  parent: system.admin_structure
+
+# Scan menu items definition
+entity.scan.collection:
+  title: 'Scan list'
+  route_name: entity.scan.collection
+  description: 'List Scan entities'
+  parent: system.admin_structure
+  weight: 100
+
+scan.admin.structure.settings:
+  title: Scan settings
+  description: 'Configure Scan entities'
+  route_name: scan.settings
+  parent: system.admin_structure

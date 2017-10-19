@@ -1,0 +1,5 @@
+name: Spectra
+type: module
+description: Spectral data
+core: 8.x
+package: Omega
