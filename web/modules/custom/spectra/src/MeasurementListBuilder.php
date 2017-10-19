@@ -20,7 +20,7 @@ class MeasurementListBuilder extends EntityListBuilder {
    * {@inheritdoc}
    */
   public function buildHeader() {
-    $header['id'] = $this->t('Measurement ID');
+    $header['scan'] = $this->t('Scan');
     $header['wavelength'] = $this->t('Wavelength');
     return $header + parent::buildHeader();
   }
@@ -30,7 +30,14 @@ class MeasurementListBuilder extends EntityListBuilder {
    */
   public function buildRow(EntityInterface $entity) {
     /* @var $entity \Drupal\spectra\Entity\Measurement */
-    $row['id'] = $entity->id();
+    $row['id'] = $this->l(
+      $entity->getScan()->label(),
+      new Url(
+        'entity.scan.canonical', [
+          'scan' => $entity->getScanId(),
+        ]
+      )
+    );
     $row['wavelength'] = $this->l(
       $entity->label(),
       new Url(
